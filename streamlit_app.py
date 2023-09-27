@@ -23,5 +23,5 @@ streamlit.write('The user entered',fruit_choice)
 fruityvice_entered_choice=requests.get('https://fruityvice.com/api/fruit/'+fruit_choice)
 fruityvice_normalized=pandas.json_normalize(fruityvice_entered_choice.json())
 streamlit.dataframe(fruityvice_normalized)
-#import snowflake.connector
+import snowflake.connector
 
